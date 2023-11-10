@@ -1,5 +1,6 @@
 package task;
 
+
 import java.util.function.Predicate;
 
 public class Even implements Predicate<Integer> {
@@ -7,3 +8,4 @@ public class Even implements Predicate<Integer> {
 		return (i % 2 == 0);
 	}
 }
+

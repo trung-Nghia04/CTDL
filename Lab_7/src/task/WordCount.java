@@ -1,5 +1,4 @@
 package task;
-
 public class WordCount {
 	private String word;
 	private int count;
@@ -17,17 +16,17 @@ public class WordCount {
 		result = prime * result + count;
 		return result;
 	}
-
 	@Override
 	public boolean equals(Object obj) {
-		System.out.println("called.");
-		if (obj == null || obj.getClass() != getClass())
-			return false;
-		else {
-			WordCount c = (WordCount) obj;
-			return this.word.equals(c.word);
-		}
+	    // System.out.println("called.");
+	    if (obj == null || obj.getClass() != getClass())
+	        return false;
+	    else {
+	        WordCount c = (WordCount) obj;
+	        return this.word.equals(c.word);
+	    }
 	}
+
 
 	public int getCount() {
 		return count;
@@ -45,4 +44,6 @@ public class WordCount {
 	public String toString() {
 		return this.word + "-" + this.count;
 	}
+	
+	
 }
